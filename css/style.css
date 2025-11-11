@@ -1,0 +1,256 @@
+
+@font-face {
+    font-family: DigitalPixels;
+    src:url("../fonts/DigitalPixels.OTF");
+}
+@font-face {
+    font-family: minecraft;
+    src:url("../fonts/minecraft_0.ttf");
+}
+body {
+    margin: auto;
+    width: 95vw;
+    height: 97vh;
+    background-image:url("../image/bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family:'DigitalPixels';
+    color:rgb(237, 242, 203);
+    margin: 10px;
+}
+.up{
+    width:54%;
+    height:12%;
+    background-color: rgb(249, 0, 0);
+
+}
+.upBottom{
+    width:54%;
+    height:5%;
+         clip-path: polygon(0 0, 100% 0, 97.2% 100%, 2.6% 100%);
+    background: linear-gradient(rgb(230, 3, 3), rgb(120, 5, 5));;
+}
+.play{
+    width: 51%;
+    height: 50%;
+    background: linear-gradient(rgb(179, 3, 3), rgb(153, 8, 8) ) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playButton{
+    width: 57%;
+    height: 20%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+    background: linear-gradient(rgb(228, 3, 3), rgb(184, 2, 2)) ;
+    clip-path: polygon( 5.2% 0, 94.8% 0, 100% 100%, 0% 100%);
+   
+}
+.bottom{
+    width: 57%;
+    height: 10%;
+    background-color: rgb(120, 5, 5);
+}
+.display{
+    width: 65%;
+    height:80%;
+    background-color: rgb(244, 233, 75);
+    border: 20px solid rgb(224, 85, 16);
+    display: flex;
+}
+.container{
+  display: flex;
+  flex-grow: 1;
+  border-bottom: 0 ;
+  border-top: 0;
+  flex-direction: column;
+  font-size: 90px;
+  align-items: center;
+ justify-content: center;
+}
+
+input{
+    width: 50%;
+    height: 50px;
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 225, 0);
+    border: 0;
+    border-radius: 60px;
+   font-size: 26px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+#balance{
+     width: 50%;
+    height: 50px;
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 225, 0);
+    border: 0;
+    border-radius: 60px;
+   font-size: 16px;
+   text-align: center;
+}
+#btn {
+  height: 100px;
+  perspective: 800px;
+  display: flex;
+  justify-content: center;
+   transition: transform .3s linear;
+}
+
+#btn-side {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%/20%;
+background: linear-gradient(rgb(255, 225, 0), rgb(128, 113, 3));
+
+}
+#btn-top {
+   width: 200px;
+  height: 44px;
+  position: absolute;
+
+  top:0;
+  border-radius: 50%;
+  background-color: rgb(255, 225, 0);
+
+}
+.stat{
+     width:50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#btn:hover{
+    cursor: pointer;
+}
+#res{
+    position: absolute;
+    top: 35%;                 
+    left: 40%;               
+    width: 400px;               
+    height: 200px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    color: rgb(0, 0, 255);
+    font-size: 26px;
+}
+@media (max-width: 1440px){
+    #res{
+    top: 33%;                 
+    left: 34%;               
+    width: 400px;               
+    height: 200px;}
+}
+@media (max-width: 1024px){
+    #res{
+    width: 300px ;               
+    height: 150px ;
+    font-size: 15px;
+   }
+   .up{
+    width:74%;
+    height:12%;
+}
+.upBottom{
+    width:74%;
+    height:5%;
+}
+.play{
+    width: 70%;
+    height: 50%;
+}
+.playButton{
+    width: 78%;
+    height: 20%; 
+}
+.bottom{
+    width: 78%;
+    height: 10%;
+    
+}
+}
+@media (max-width: 768px){
+    #res{
+    top: 34%;                 
+    left: 30%;  
+    width: 300px ;               
+    height: 150px ;
+    font-size: 15px;
+   }
+   .up{
+    width:94%;
+    height:12%;
+}
+.upBottom{
+    width:94%;
+    height:5%;
+}
+.play{
+    width: 89%;
+    height: 50%;
+}
+.playButton{
+    width: 99%;
+    height: 20%; 
+}
+.bottom{
+    width: 99%;
+    height: 10%;
+    
+}
+}
+@media (max-width: 425px){
+    #res{
+    top: 34%;                 
+    left: 27%;  
+    width: 200px ;               
+    height: 150px ;
+    font-size: 12px;
+   }
+   .up{
+    width:100%;
+    height:12%;
+}
+.upBottom{
+    width: 100%;
+    height:5%;
+}
+.play{
+    width: 95%;
+    height: 50%;
+}
+.playButton{
+    width: 106%;
+    height: 20%; 
+}
+.bottom{
+    width: 106%;
+    height: 10%;
+    
+}
+#btn {
+  height: 50px;
+}
+
+#btn-side {
+  width: 100px;
+  height: 60px;
+}
+#btn-top {
+   width: 100px;
+  height: 22px;
+}
+.container{
+  font-size: 250%;}
+}
